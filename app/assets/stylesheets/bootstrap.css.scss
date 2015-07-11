@@ -6855,26 +6855,6 @@ a.list-group-item-danger.active:focus {
   color: #2c3e50;
 }
 
-.footer {
-
-  
-   bottom:0;
-   width:100%;
-   height:60px;   /* Height of the footer */
-   background:#6cf;
-  
-  
-  background-color: black;
-}
-
-#previewContainer {
-  width:100%;
-  height:100%;
-
-
-  background-color: white;
-}
-
 @font-face {
   font-family: 'gotham-medium';
         src: font-url('gotham-medium.ttf') format('truetype');    
@@ -6885,6 +6865,52 @@ a.list-group-item-danger.active:focus {
   font-family: 'gotham-light';
         src: font-url('gotham-light.ttf') format('truetype');        
 }
+
+.footer {
+
+  
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:#6cf;
+  
+  
+  background-color: black;
+  position: relative;
+}
+
+.footer > #footer-section {
+width: 50%;
+height:100%;
+background-color: black;
+position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-family: 'gotham-light';
+    color: white;
+    font-size: 10px;
+    display: table;
+    text-align: center;
+}
+
+.footer > #footer-section > span {
+    display: table-cell;
+  vertical-align: middle;
+
+}
+
+#previewContainer {
+  width:100%;
+  height:100%;
+
+
+  background-color: white;
+}
+
+
 
 #pcSection1 {
   font-family: 'gotham-medium';
@@ -6994,5 +7020,10 @@ text-align: center;
 #pcSection3 > table > td {
   width: 25%; 
 
+}
+
+.not-active {
+   pointer-events: none;
+   cursor: default;
 }
 
