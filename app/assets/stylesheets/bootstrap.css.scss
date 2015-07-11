@@ -3930,6 +3930,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a > img {
   max-width: 20px;
 }
+.nav > li > a > img:hover {
+  max-width: 20px;
+
+}
 .nav-tabs {
   border-bottom: 1px solid #ecf0f1;
 }
@@ -6873,13 +6877,13 @@ a.list-group-item-danger.active:focus {
 
 @font-face {
   font-family: 'gotham-medium';
-        src: url('gotham-medium.ttf') format('truetype');    
+        src: font-url('gotham-medium.ttf') format('truetype');    
          
 }
 @font-face {
  
   font-family: 'gotham-light';
-        src: url('gotham-light.ttf') format('truetype');        
+        src: font-url('gotham-light.ttf') format('truetype');        
 }
 
 #pcSection1 {
