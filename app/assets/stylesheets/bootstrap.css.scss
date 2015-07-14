@@ -6979,6 +6979,7 @@ font-size: 42px;
 
 
 
+
 #getting-started0 {
 
 text-align: center;
@@ -7162,42 +7163,59 @@ font-size: 42px;
 
 
 #pcSection2-mobile {
+ 
   
-  
-  height:200px;
+  height:100%;
   width: 100%;
   
   position: relative;
 }
 
 #pcSection2-mobile img{
+  height: 65%;
+  width: 65%;
+
     position: absolute;
     margin: auto;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 60px;
+}
+#pcSection3-container {
+  position: relative;
 }
 #pcSection3-mobile {
+  margin: auto;  
+  position: absolute;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 44px;
+
+
+ 
   font-family: 'gotham-light';
   font-size: 30px;
   color: white;
 
   height:200px;
-  width: 100%;
+  width: 50%;
   
-  position: relative;
+  
   display: table;
  
 }
 
 #pcSection3-mobile > #pcSection3-content-mobile #pcSection3-table-mobile {
+ 
   display: table-cell;
     text-align: center;
     vertical-align: middle;
 
 }
 #pcSection3-table-mobile {
+
   display: inline-block;
  
   text-align: center;
@@ -7209,7 +7227,11 @@ font-size: 42px;
 
    
 }
+#until-release {
+width: 100%;
+text-align: center;
 
+}
 
 
 #getting-started0-mobile {
@@ -7233,25 +7255,25 @@ text-align: center;
 color: white;
 }
 #getting-started4-mobile {
-font-size: 8px;
+font-size: 10px;
 text-align: center;
 color: white;
 }
 
 #getting-started5-mobile {
-font-size: 8px;
+font-size: 10px;
 color: white;
 text-align: center;
 
 }
 #getting-started6-mobile {
-font-size: 7px;
+font-size: 9px;
 color: white;
 text-align: center;
 
 }
 #getting-started7-mobile {
-font-size: 7px;
+font-size: 9px;
 color: white;
 text-align: center;
 
@@ -7268,10 +7290,10 @@ text-align: center;
 
 #subscriber-contact-mobile {
   width: 100%;
-  height:300px;
+  height:200px;
 
 color: black;
-position: relative;
+
  
 
 }
@@ -7279,7 +7301,7 @@ position: relative;
 #subscriber-contact-mobile > #contact-middle-mobile {
 
   background-color: #344547;
-  position: absolute;
+
 width: 33%;
 height:100%;
 
@@ -7300,11 +7322,19 @@ display: table;
     display: table-cell;
     text-align: center;
     vertical-align: middle;
+    position: relative;
+
 
 }
 
 #contact-content-center-mobile {
 /* just for the demo */
+  margin: auto;  
+  position: absolute;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 44px;
     display: inline-block;
     text-align: left;
   font-family: "gotham-medium";
