@@ -7314,17 +7314,17 @@ height:100%;
     left: 0;
     right: 0;
     bottom: 0;
-display: table;
+
 }
 
 
 
-#subscriber-contact-mobile > #contact-middle-mobile > #contact-content-mobile {
+#subscriber-contact-mobile > #contact-middle-mobile {
   
 
-    display: table-cell;
+    
     text-align: center;
-    vertical-align: middle;
+    
     position: relative;
 
 
@@ -7332,14 +7332,11 @@ display: table;
 
 #contact-content-center-mobile {
 /* just for the demo */
-  margin: auto;  
-  position: absolute;
-  left:0;
-  right: 0;
-  top: 0;
-  bottom: 44px;
+   
+    padding-top: 12%;
     display: inline-block;
     text-align: center;
+    vertical-align: middle;
   font-family: "gotham-medium";
   color:white;
   
