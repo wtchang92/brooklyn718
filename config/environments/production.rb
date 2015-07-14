@@ -77,4 +77,8 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
   config.action_mailer.default_url_options = { :host => 'bk718.heroku.com' }
+  config.cache_classes = true
+config.serve_static_assets = true
+config.assets.compile = true
+config.assets.digest = true
 end
