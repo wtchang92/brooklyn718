@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  resources :subscribers
+  get '/subscribers/:id', to: 'subscribers#show'
+
   devise_for :admins
   resources :admins
   resources :contacts

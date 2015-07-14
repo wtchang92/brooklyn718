@@ -1,60 +1,94 @@
 <div id = "previewContainer">
 
     <div id="pcSection1">
-          WHERE<br>BROOKLYN<br>AT?
+        <!-- WHERE<BR>BROOKLYN<BR>AT? -->
+         <span style = "background-color:black;"><div id = "tagline">WHERE</div></span>
+           <span style = "background-color:black;"><div id = "tagline">BROOKLYN</div></span>
+           <span style = "background-color:black;"><div id = "tagline">AT?</div></span>
     </div>
     <div id="pcSection2">
         <%= image_tag "shirt.png" %>
     </div>
     <div id="pcSection3">
         <span>
-        <table  style="width:100%">
-  <tr>
-    <td><div id = "getting-started0"></div></td>
-    <td><div id = "getting-started1"></div></td>      
-    <td><div id = "getting-started2"></div></td>
-    <td><div id = "getting-started3"></div></td>
-  </tr>
-  <tr>
-    <td><div id = "getting-started4">DAYS</div></td>
-    <td><div id = "getting-started5">HOURS</div></td>        
-    <td><div id = "getting-started6">MINUTES</div></td>
-    <td><div id = "getting-started7">SECONDS</div></td>
-  </tr>
-  
-</table> 
-UNTIL RELEASE
-</span>      
-<script type="text/javascript">
-   $("#getting-started0")
-  .countdown("2015/07/18", function(event) {
-     $(this).text(
-       event.strftime('%D')
-     );
-   });
-  $("#getting-started1")
-  .countdown("2015/07/18", function(event) {
-     $(this).text(
-       event.strftime('%H')
-     );
-   });
-  $("#getting-started2")
-  .countdown("2015/07/18", function(event) {
-     $(this).text(
-       event.strftime('%M')
-     );
-   });
-  $("#getting-started3")
-  .countdown("2015/07/18", function(event) {
-     $(this).text(
-       event.strftime('%S')
-     );
-   });
- </script>
- 
+            <table  style="width:100%">
+                <tr>
+                    <td><div id = "getting-started0"></div></td>
+                    <td><div id = "getting-started1"></div></td>      
+                    <td><div id = "getting-started2"></div></td>
+                    <td><div id = "getting-started3"></div></td>
+                 </tr>
+                <tr>
+                    <td><div id = "getting-started4">DAYS</div></td>
+                    <td><div id = "getting-started5">HOURS</div></td>        
+                    <td><div id = "getting-started6">MINUTES</div></td>
+                    <td><div id = "getting-started7">SECONDS</div></td>
+                </tr>
+          
+            </table> 
+            UNTIL RELEASE
+         </span>      
+         <script type="text/javascript">
+           $("#getting-started0")
+          .countdown("2015/07/18", function(event) {
+             $(this).text(
+               event.strftime('%D')
+             );
+           });
+          $("#getting-started1")
+          .countdown("2015/07/18", function(event) {
+             $(this).text(
+               event.strftime('%H')
+             );
+           });
+          $("#getting-started2")
+          .countdown("2015/07/18", function(event) {
+             $(this).text(
+               event.strftime('%M')
+             );
+           });
+          $("#getting-started3")
+          .countdown("2015/07/18", function(event) {
+             $(this).text(
+               event.strftime('%S')
+             );
+           });
+         </script>
+    </div>
+</div>
+<% if notice %>
+  <p class="alert alert-success"><%= notice %></p>
+<% end %>
+<% if alert %>
+  <p class="alert alert-danger"><%= alert %></p>
+<% end %>
+<div id = "subscriber-contact">
+    <div id= "contact-middle">
+        <div id = "contact-content">
+        COME FIND US!<br>(& LIMITED TIME DISCOUNT)
+       <%= form_for(@subscriber, :html => {:class => "form-inline"})  do |f| %>
+        <% if @subscriber.errors.any? %>
+        <div id="error_explanation">
+            <h2><%= pluralize(@subscriber.errors.count, "error") %> prohibited this subscriber from being saved:</h2>
+
+            <ul>
+            <% @subscriber.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+         <% end %>
+             </ul>
+        </div>
+        <% end %>
+
+        
+        
+         <%= f.text_field :email, :placeholder => "EMAIL", 
+      :class => "form-control", :id => "exampleInputName2"%>        
+        <%= f.submit "SUBMIT", :class => "btn btn-default" %>
+         
+       
+         <% end %>
+        </div>
     </div>
 
-
-
-
+       
 </div>

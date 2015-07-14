@@ -8,10 +8,10 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   
-  background-color: black;
+  background: url("/assets/718background.png"); 
   height: 100%;
   width: 100%;
-  overflow: auto;
+  overflow: hidden;
 
 }
 body {
@@ -120,7 +120,7 @@ samp {
   font-size: 1em;
 }
 button,
-input,
+input {font-family: "gotham-medium";}
 optgroup,
 select,
 textarea {
@@ -1097,8 +1097,8 @@ body {
   font-family: "gotham-light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 1.42857143;
-  color: #2c3e50;
-  background-color: black;
+  color: white;
+  background-color: transparent;
   margin: 0;
   height: 100%;
   
@@ -6872,18 +6872,17 @@ a.list-group-item-danger.active:focus {
    bottom:0;
    width:100%;
    height:60px;   /* Height of the footer */
-   background:#6cf;
+ 
   
   
-  background-color: black;
-  position: relative;
+ 
 }
 
 .footer > #footer-section {
 width: 50%;
 height:100%;
-background-color: black;
-position: absolute;
+
+
     margin: auto;
     top: 0;
     left: 0;
@@ -6907,21 +6906,32 @@ position: absolute;
   height:100%;
 
 
-  background-color: white;
 }
 
 
 
 #pcSection1 {
   font-family: 'gotham-medium';
-  font-size: 45px;
+  
+  
   color: white;
   float:left;
   display: inline-block;
   height:100%;
   width: 25%;
-  background-color: black;
-  padding-left: 30px;
+ 
+  padding-left: 35px;
+  position: relative;
+}
+#pcSection1 > span {
+
+display: block; margin: 3px auto;
+border: 5px black;
+display:inline-block;
+}
+#pcSection1 > span > #tagline {
+margin: 5px;
+font-size: 42px;
 }
 
 
@@ -6931,7 +6941,7 @@ position: absolute;
   display: inline-block;
   height:100%;
   width: 50%;
-  background-color: black;
+  
   position: relative;
 }
 
@@ -6952,7 +6962,7 @@ position: absolute;
   display: inline-block;
   height:100%;
   width: 25%;
-  background-color: black;
+  
   position: relative;
  
 }
@@ -7026,4 +7036,78 @@ text-align: center;
    pointer-events: none;
    cursor: default;
 }
+#subscriber-contact {
+  width: 100%;
+  height:120px;
 
+color: black;
+position: relative;
+
+}
+
+#subscriber-contact > #contact-middle {
+
+  background-color: #344547;
+  position: absolute;
+width: 33%;
+height:100%;
+
+
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+#subscriber-contact > #contact-middle > #contact-content {
+  font-family: "gotham-medium";
+  color:white;
+  padding-left: 40px;
+  margin: 15px;
+
+}
+
+input.email{
+
+  
+  font-family: "gotham-light";
+  font-size: 10px;
+    color: black;
+    width: 400px;
+    height: 60px;
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
