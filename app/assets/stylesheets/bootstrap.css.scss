@@ -7038,10 +7038,11 @@ text-align: center;
 }
 #subscriber-contact {
   width: 100%;
-  height:120px;
+  height:150px;
 
 color: black;
 position: relative;
+ 
 
 }
 
@@ -7058,15 +7059,27 @@ height:100%;
     left: 0;
     right: 0;
     bottom: 0;
+display: table;
+}
+
+
+
+#subscriber-contact > #contact-middle > #contact-content {
+  
+
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
 
 }
 
-#subscriber-contact > #contact-middle > #contact-content {
+#contact-content-center {
+
+    display: inline-block;
+    text-align: left;
   font-family: "gotham-medium";
   color:white;
-  padding-left: 40px;
-  margin: 15px;
-
+  
 }
 
 input.email{

@@ -65,6 +65,7 @@
 <div id = "subscriber-contact">
     <div id= "contact-middle">
         <div id = "contact-content">
+            <div id = "contact-content-center">
         COME FIND US!<br>(& LIMITED TIME DISCOUNT)
        <%= form_for(@subscriber, :html => {:class => "form-inline"})  do |f| %>
         <% if @subscriber.errors.any? %>
@@ -87,6 +88,7 @@
          
        
          <% end %>
+        </div>
         </div>
     </div>
 
