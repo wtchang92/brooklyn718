@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   devise_for :admins
   resources :admins
   resources :contacts
+  get 'static/mobile', to: 'static_page#mobile'
   root             'static_page#home'
   
   # The priority is based upon order of creation: first created -> highest priority.
