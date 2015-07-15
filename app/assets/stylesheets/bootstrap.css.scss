@@ -8,9 +8,10 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   /*background-color: #BDBDBD; */
+
   background: url("/assets/718background.png"); 
   height: 100%;
-  width: 100%;
+  width: 1280px;
   overflow: hidden;
 
 }
@@ -6950,7 +6951,7 @@ font-size: 42px;
 }
 
 #pcSection2 img{
-    width: 70%;
+    width: 65%;
     height: 100%;
     position: absolute;
     margin: auto;
