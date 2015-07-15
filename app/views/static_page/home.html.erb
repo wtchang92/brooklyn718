@@ -76,7 +76,7 @@ document.getElementById("computer-container").style.width = screen_width;
     <div id= "contact-middle">
         <div id = "contact-content">
             <div id = "contact-content-center">
-        COME FIND US<br>AND GET DISCOUNTS!
+        <div id = "message" style = "margin-bottom:7px;"> COME FIND US<br>AND GET DISCOUNTS! </div>
        <%= form_for(@subscriber, :html => {:class => "form-inline"})  do |f| %>
         <% if @subscriber.errors.any? %>
         <div id="error_explanation">
@@ -102,4 +102,13 @@ document.getElementById("computer-container").style.width = screen_width;
         </div>
     </div>    
 </div>
+<footer class="footer">
+
+<div id = "footer-section">
+  <span>
+  Contact us | Terms of use | Credits | ©SevenOneEight
+  </span> 
+</div>  
+
+</footer>
 </div>
