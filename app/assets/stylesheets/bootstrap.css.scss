@@ -4205,12 +4205,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   line-height: 21px;
   height: 60px;
 }
+.style_logo {
+  
+  max-width:80%;
+max-height:100%;
+}
+
 .navbar-brand:hover,
 .navbar-brand:focus {
   text-decoration: none;
 }
 .navbar-brand > img {
-  display: block;
+  display: inline;
 }
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
@@ -6930,7 +6936,7 @@ border: 5px black;
 display:inline-block;
 }
 #pcSection1 > span > #tagline {
-margin: 5px;
+margin: 0px 20px;
 font-size: 42px;
 }
 
@@ -7157,7 +7163,7 @@ border: 5px black;
 display:inline-block;
 }
 #pcSection1-mobile > span > #tagline {
-margin: 5px;
+margin: 0px 20px;
 font-size: 42px;
 }
 
@@ -7333,7 +7339,7 @@ height:100%;
 #contact-content-center-mobile {
 /* just for the demo */
    
-    padding-top: 12%;
+    padding-top: 11%;
     display: inline-block;
     text-align: center;
     vertical-align: middle;
