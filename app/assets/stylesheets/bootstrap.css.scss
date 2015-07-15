@@ -7,7 +7,7 @@
 */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
-  
+  /*background-color: #BDBDBD; */
   background: url("/assets/718background.png"); 
   height: 100%;
   width: 100%;
@@ -6909,9 +6909,7 @@ height:100%;
 
 #previewContainer {
   width:100%;
-  height:100%;
-
-
+  height:70%;
 }
 
 
@@ -6926,7 +6924,7 @@ height:100%;
   height:100%;
   width: 25%;
  
-  padding-left: 35px;
+  
   position: relative;
 }
 #pcSection1 > span {
@@ -6936,7 +6934,7 @@ border: 5px black;
 display:inline-block;
 }
 #pcSection1 > span > #tagline {
-margin: 0px 20px;
+margin: 0px 15px 0px 45px;
 font-size: 42px;
 }
 
@@ -6952,12 +6950,14 @@ font-size: 42px;
 }
 
 #pcSection2 img{
+    width: 70%;
+    height: 100%;
     position: absolute;
     margin: auto;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 100px;
+    bottom: 0;
 }
 #pcSection3 {
   font-family: 'gotham-light';
@@ -7348,6 +7348,27 @@ height:100%;
   
 }
 
+#motto {
+  
+  width: 100%;
+  
+
+}
+
+#motto-helper {
+display: inline-block;
+    height: 100%;
+    text-align: center;
+
+}
+
+#motto-helper > img{
+
+  vertical-align: top;
+max-width:100%;
+max-height:100%;
+
+}
 
 
 

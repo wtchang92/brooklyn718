@@ -56,6 +56,7 @@
          </script>
     </div>
 </div>
+<div id = "motto" > <div id = "motto-helper"><%= image_tag "ridethewave.png" %></div> </div>
 <% if notice %>
   <p class="alert alert-success"><%= notice %></p>
 <% end %>
@@ -66,7 +67,7 @@
     <div id= "contact-middle">
         <div id = "contact-content">
             <div id = "contact-content-center">
-        COME FIND US!<br>(& LIMITED TIME DISCOUNT)
+        COME FIND US<br>AND GET DISCOUNTS!
        <%= form_for(@subscriber, :html => {:class => "form-inline"})  do |f| %>
         <% if @subscriber.errors.any? %>
         <div id="error_explanation">
