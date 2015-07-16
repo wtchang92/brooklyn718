@@ -23,6 +23,16 @@ body {
   overflow: auto;
 
 }
+@font-face {
+  font-family: 'gotham-medium';
+        src: font-url('gotham-medium.ttf') format('truetype');    
+         
+}
+@font-face {
+ 
+  font-family: 'gotham-light';
+        src: font-url('gotham-light.ttf') format('truetype');        
+}
 
 article,
 aside,
@@ -3054,6 +3064,7 @@ fieldset[disabled] .btn {
   box-shadow: none;
 }
 .btn-default {
+  font-family: "gotham-light";
   color: #ffffff;
   background-color: #95a5a6;
   border-color: #95a5a6;
@@ -6862,16 +6873,7 @@ a.list-group-item-danger.active:focus {
   color: #2c3e50;
 }
 
-@font-face {
-  font-family: 'gotham-medium';
-        src: font-url('gotham-medium.ttf') format('truetype');    
-         
-}
-@font-face {
- 
-  font-family: 'gotham-light';
-        src: font-url('gotham-light.ttf') format('truetype');        
-}
+
 
 .footer {
 
@@ -6951,8 +6953,8 @@ font-size: 42px;
 }
 
 #pcSection2 img{
-    width: 60%;
-    height: 100%;
+    width: 80%;
+    height: 110%;
     position: absolute;
     margin: auto;
     top: 0;
@@ -7180,13 +7182,13 @@ font-size: 42px;
 }
 
 #pcSection2-mobile img{
-  height: 75%;
-  width: 65%;
+  height: 85%;
+  width: 78%;
 
 
     position: absolute;
     margin: auto;
-    top: -120px;
+    top: -240px;
     left: 0;
     right: 0;
     bottom: 0;
