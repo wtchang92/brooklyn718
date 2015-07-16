@@ -15,9 +15,14 @@ document.getElementById("computer-container").style.width = screen_width;
            <span style = "background-color:#344547;"><div id = "tagline">BROOKLYN</div></span><br>
            <span style = "background-color:#344547;"><div id = "tagline">AT?</div></span>
     </div>
-    <div id="pcSection2">
-        <%= image_tag "shirt2.png" %>
+        <div id="pcSection2">
+          
+        <%= image_tag "shirt2.png", :id => "magnifierjs-image", :"data-magnifierjs-zoomimage" => image_path("shirt2.png")%>
+       
+        
+
     </div>
+
     <div id="pcSection3">
         <span>
             <table  style="width:100%">

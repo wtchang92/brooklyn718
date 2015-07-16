@@ -7376,7 +7376,17 @@ height:100%;
 
 }
 
+#magnifierjs-glass {
+  background-color:   transparent;
+  background-repeat:  no-repeat;
+  width:              150px;
+  height:             150px;
 
-
-
-
+  margin:             0;
+  padding:            0;
+  position:           absolute;
+  display:            none;
+  border-radius:      100px;
+  -moz-border-radius: 100px;
+  cursor:             none;
+}

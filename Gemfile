@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 ruby "2.1.5"
+gem 'magnifierjs-rails'
+
 gem 'devise'
 gem 'rails', '4.2.1'
 # Use sqlite3 as the database for Active Record
